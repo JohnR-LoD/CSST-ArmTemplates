@@ -2,12 +2,12 @@
 {
     public class TestType
     {
-        public bool TestCosmosDB { get; internal set; }
-        public bool TestMySQL { get; internal set; }
-        public bool TestPublicStorage { get; internal set; }
-        public bool TestPrivateStorage { get; internal set; }
-        public bool TestSearch { get; internal set; }
-        public bool TestSQLServer { get; internal set; }
+        public static bool TestCosmosDB { get; internal set; }
+        public static bool TestMySQL { get; internal set; }
+        public static bool TestPublicStorage { get; internal set; }
+        public static bool TestPrivateStorage { get; internal set; }
+        public static bool TestSearch { get; internal set; }
+        public static bool TestSQLServer { get; internal set; }
 
     }
 }
