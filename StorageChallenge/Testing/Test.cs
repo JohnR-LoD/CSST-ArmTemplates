@@ -5,41 +5,16 @@ namespace StorageChallenge.Testing
 {
     public class TestProcessor
     {
-        public bool Passed { get; set; }
+        public NoSQLTestResult TestCosmos(CosmosTestData cosmosTestData) => new();
 
-        public TestProcessor()
-        {
-        }
+        public DataTestResult TestMySQL(SQLTestData sqlTestData) => new();
 
-        public NoSQLTestResult TestCosmos(CosmosTestData cosmosTestData)
-        {
+        public BlobTestResult TestPrivateBlob(FileTestData fileTestData) => new();
 
-            throw new NotImplementedException();
-        }
+        public BlobTestResult TestPublicBlob(FileTestData fileTestData) => new();
 
-        public DataTestResult TestMySQL(SQLTestData sqlTestData)
-        {
-            throw new NotImplementedException();
-        }
+        public NoSQLTestResult TestSearch(CosmosTestData cosmosTestData) => new();
 
-        public BlobTestResult TestPrivateBlob(FileTestData fileTestData)
-        {
-            throw new NotImplementedException();
-        }
-
-        public BlobTestResult TestPublicBlob(FileTestData fileTestData)
-        {
-            throw new NotImplementedException();
-        }
-
-        public NoSQLTestResult TestSearch(CosmosTestData cosmosTestData)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTestResult TestSQLServer(SQLTestData sqlTestData)
-        {
-            throw new NotImplementedException();
-        }
+        public DataTestResult TestSQLServer(SQLTestData sqlTestData) => new();
     }
 }
